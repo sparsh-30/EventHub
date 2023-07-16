@@ -1,0 +1,350 @@
+/* 
+font-family: 'Original Surfer', cursive;
+font-family: 'Poppins', sans-serif;
+
+#736DF6
+#AC88EF
+
+*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: beige;
+}
+
+/* CSS for Navbar */
+.nav {
+  height: 70px;
+  width: 100%;
+  background-color: #ac88ef;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  font-family: 'Original Surfer', cursive;
+  display: inline-block;
+  font-size: 30px;
+  color: #fff;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+#searchbar {
+  height: 25px;
+  width: 250px;
+  border-radius: 30px;
+  border-style: none;
+  padding-left: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+#searchbar:focus {
+  outline: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  #searchbar {
+    margin-top: 15px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/* Background image and tagline section */
+.bg-image-div {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./../images/about_us_bg.jpg');
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.bg-image-div > p {
+  width: 60%;
+  margin-top: 100px;
+  color: white;
+  /* color: #245953; */
+}
+
+@media (max-width: 850px) {
+  .bg-image-div {
+    height: 60vh;
+  }
+  .bg-image-div > p {
+    text-align: center;
+    width: 90%;
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+}
+
+/* Contact Us section */
+.about-container-1 {
+  display: flex;
+  width: 98%;
+  margin: 50px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-container-1:hover {
+  scale: 1.02;
+}
+
+.about-title-1 {
+  background-color: #ac88ef;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.about-text-1 {
+  width: 80%;
+  /* background-color: blue; */
+  padding: 10px 30px;
+}
+
+@media (max-width: 850px) {
+  .about-container-1 {
+    flex-direction: column;
+  }
+  .about-title-1 {
+    width: 100%;
+  }
+  .about-text-1 {
+    padding: 0px 0px;
+    width: 100%;
+  }
+  .about-text-1 > p {
+    margin: 20px 30px;
+  }
+}
+
+.about-container-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 98%;
+  margin: 50px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-container-2:hover {
+  scale: 1.02;
+}
+
+@media (max-width: 850px) {
+  .about-container-2 {
+    flex-direction: column;
+  }
+}
+
+#separator {
+  width: 90%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #d3d3d3;
+}
+
+/* Testimonial */
+.title{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.testimonial-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 40px 0;
+}
+
+.testimonial-card{
+    width: 300px;
+    background-color: #736DF6;
+    color: white;
+    box-shadow: 2px 3px 16px 2px rgba(0,0,0,0.75);
+    transition: all 0.3s ease-in-out;
+}
+
+.testimonial-card:hover{
+    scale: 1.08;
+}
+
+.testimonial-card > img{
+    width: 300px;
+    height: 300px;
+}
+
+.testimonial{
+    text-align: center;
+    padding: 0 10px;
+}
+
+.testimonial-author{
+    padding: 0 10px;
+    text-align: end;
+    font-weight: 700;
+}
+
+@media (max-width: 500px){
+    .testimonial-container{
+        flex-wrap: wrap;
+    }
+    .testimonial-card{
+        margin-top: 25px;
+    }
+}
+
+/* Footer section */
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ac88ef;
+  color: white;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+  font-size: 1.3rem;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .footer-basic ul {
+    flex-direction: column;
+  }
+}
