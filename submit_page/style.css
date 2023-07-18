@@ -1,3 +1,12 @@
+/* 
+font-family: 'Original Surfer', cursive;
+font-family: 'Poppins', sans-serif;
+
+#736DF6
+#AC88EF
+
+*/
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -116,82 +125,91 @@ body {
   }
 }
 
-/* Background image and tagline section */
-.bg-image-div {
-  width: 100%;
-  height: 100vh;
-  background-image: url('./../images/contact-us-bg.avif');
+/* Submit form section */
+.form-container {
+  background-image: url('./../images/submit_background.webp');
   background-size: 100% 100%;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  font-size: 3rem;
-  font-weight: 900;
-  text-align: center;
+  padding: 50px 0;
 }
 
-.bg-image-div > p {
-  width: 60%;
-  margin-top: 100px;
-  color: white;
-}
-
-@media (max-width: 850px) {
-  .bg-image-div {
-    height: 60vh;
-  }
-  .bg-image-div > p {
-    text-align: center;
-    width: 90%;
-    margin-top: 10px;
-    font-size: 2rem;
-  }
-}
-
-/* Contact Us section */
-.title {
-  font-size: 2rem;
-  text-align: center;
+.form-title{
+  font-size: 1.5rem;
   font-weight: 700;
+  text-align: center;
 }
 
-.contact-container {
-  width: 60%;
-  margin: 0 auto;
+.form-container form {
+  width: 40%;
+  background-color: white;
+  margin: 0px auto;
+  padding: 20px 50px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px 5px rgba(0,0,0,0.75);
 }
 
-.details-container {
+.form-input {
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  background-color: #d3d3d3;
+  border-style: none;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.date-time {
   display: flex;
   justify-content: space-between;
-  margin: 40px 0;
 }
 
-.details-card {
-  display: flex;
-  justify-content: baseline;
-  flex-direction: column;
+.date-time input {
+  width: 100%;
 }
 
-.details-card-title {
-  background-color: #736df6;
-  color: white;
+.form-labels {
   font-weight: 700;
-  font-size: 1.3rem;
-  text-align: center;
-  margin-bottom: 10px;
 }
 
-.contact-social-links {
+.form-labels span{
+  color: red;
+}
+
+.form-buttons{
+  width: 40%;
+  height: 40px;
+  background-color: #736DF6;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.buttons-container{
   display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
 }
 
-.social-link {
-  font-size: 2.5rem;
-  margin-right: 30px;
-  color: black;
+@media (max-width: 800px) {
+  .form-container form{
+    width: 60%;
+  }
+  .date-time {
+    flex-wrap: wrap;
+  }
+  .buttons-container{
+    flex-wrap: wrap;
+  }
+  .form-buttons{
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 
 /* Footer section */
+
 .footer-basic {
   padding: 40px 0;
   background-color: #ac88ef;

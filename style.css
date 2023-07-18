@@ -1,12 +1,3 @@
-/* 
-font-family: 'Original Surfer', cursive;
-font-family: 'Poppins', sans-serif;
-
-#736DF6
-#AC88EF
-
-*/
-
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -129,7 +120,7 @@ body {
 .bg-image-div {
   width: 100%;
   height: 100vh;
-  background-image: url('images/home_page/home_background.jpg');
+  background-image: url('images/home_background.jpg');
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
@@ -158,34 +149,6 @@ body {
 }
 
 /* Our purpose section */
-/* .purpose-container {
-  width: 70%;
-  margin: 50px auto;
-  padding: 10px 40px;
-  margin-bottom: 200px;
-  border-radius: 10px;
-  box-shadow: 3px 5px 2px #888888;
-  background-color: #ac88ef;
-  color: #435b66;
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-.purpose-container:hover {
-  scale: 1.02;
-}
-
-.purpose-title {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 35px;
-  font-weight: 900;
-}
-
-.purpose {
-  margin-top: 10px;
-} */
-
 .purpose-container {
   display: flex;
   width: 98%;
@@ -210,7 +173,6 @@ body {
 
 .purpose-text {
   width: 80%;
-  /* background-color: blue; */
   padding: 10px 30px;
 }
 
@@ -230,7 +192,7 @@ body {
   }
 }
 
-#separator{
+#separator {
   width: 90%;
   margin: 0 auto;
   height: 2px;
@@ -291,6 +253,10 @@ body {
   scale: 1.02;
 }
 
+.event-card>p{
+  padding: 5px 10px;
+}
+
 @media (max-width: 1200px) {
   .past-events-section {
     flex-direction: column-reverse;
@@ -308,22 +274,21 @@ body {
   }
 }
 
-.explore-more{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 30px 0 50px 0;
+.explore-more {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 50px 0;
 }
 
-.explore-more a{
-    color: grey;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 900;
+.explore-more a {
+  color: grey;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 900;
 }
 
 /* Footer section */
-
 .footer-basic {
   padding: 40px 0;
   background-color: #ac88ef;

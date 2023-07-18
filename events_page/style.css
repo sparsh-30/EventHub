@@ -116,11 +116,18 @@ body {
   }
 }
 
-/* Background image and tagline section */
-.bg-image-div {
+/* Carousel section */
+/* .carousel-container {
   width: 100%;
   height: 100vh;
-  background-image: url('./../images/contact-us-bg.avif');
+  background-image: url('./../images/events_page/events_page.jpg');
+  background-size: 100% 100%;
+} */
+
+.carousel-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./../images/events_page.jpg');
   background-size: 100% 100%;
   display: flex;
   justify-content: center;
@@ -130,17 +137,17 @@ body {
   text-align: center;
 }
 
-.bg-image-div > p {
+.carousel-container > p {
   width: 60%;
   margin-top: 100px;
   color: white;
 }
 
 @media (max-width: 850px) {
-  .bg-image-div {
+  .carousel-container {
     height: 60vh;
   }
-  .bg-image-div > p {
+  .carousel-container > p {
     text-align: center;
     width: 90%;
     margin-top: 10px;
@@ -148,50 +155,72 @@ body {
   }
 }
 
-/* Contact Us section */
-.title {
+/* Events tables */
+.events-table-container {
+  width: 80%;
+  margin: 60px auto;
+}
+
+.table-title {
+  text-align: center;
   font-size: 2rem;
-  text-align: center;
-  font-weight: 700;
+  font-weight: 900;
 }
 
-.contact-container {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.details-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 0;
-}
-
-.details-card {
-  display: flex;
-  justify-content: baseline;
-  flex-direction: column;
-}
-
-.details-card-title {
+.events-table th {
   background-color: #736df6;
-  color: white;
-  font-weight: 700;
-  font-size: 1.3rem;
+  padding: 10px 20px;
+}
+
+.events-table td {
+  padding: 10px 20px;
   text-align: center;
-  margin-bottom: 10px;
+  border-bottom: solid 2px white;
 }
 
-.contact-social-links {
+.events-table tr:hover {
+  background-color: grey;
+}
+
+tbody tr:nth-child(2n-1) {
+  background: #d3d3d3;
+}
+
+tr:hover th[scope='row'],
+tr:hover td {
+  background-color: grey;
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .events-table-container {
+    width: 95%;
+  }
+}
+
+.list-event{
+  text-align: center;
   display: flex;
+  justify-content: center;
+  margin: -20px 0 50px 0;
 }
 
-.social-link {
-  font-size: 2.5rem;
-  margin-right: 30px;
-  color: black;
+.list-event a{
+  color: grey;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#separator {
+  width: 90%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #d3d3d3;
 }
 
 /* Footer section */
+
 .footer-basic {
   padding: 40px 0;
   background-color: #ac88ef;

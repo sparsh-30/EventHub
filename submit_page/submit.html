@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EventHub | Contact Us</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./../images/favicon.ico">
+    <title>EventHub | Submit</title>
     <!-- Linking of stylesheet -->
     <link rel="stylesheet" href="style.css" />
     <!-- Google Fonts -->
@@ -49,77 +47,82 @@
         />
         <a href="./../index.html">Home</a>
         <a href="./../events_page/events.html">Events</a>
-        <a href="./../submit_page/submit.html">Submit</a>
+        <a href="#">Submit</a>
         <a href="./../about-us-page/about-us.html">About</a>
-        <a href="#">Contact Us</a>
+        <a href="./../contact-us-page/contact-us.html">Contact Us</a>
       </div>
     </navbar>
 
-    <!-- Background image and tagline -->
-    <div class="bg-image-div">
-      <p>"Reach Out, Connect, and Engage: We're Here to Hear Your Voice!"</p>
-    </div>
-
-    <!-- Contact Us -->
-    <section class="contact-container">
-      <p class="title">CONTACT DETAILS</p>
-      <p class="contact-us-text">
-        We value your feedback and inquiries. Please feel free to reach out to
-        us through any of the provided contact methods. We strive to respond
-        promptly and look forward to hearing from you. Connect with us on social
-        media to stay updated on the latest community events, news, and
-        announcements.
-      </p>
-      <div class="details-container">
-        <div class="details-card">
-          <span class="details-card-title">Email:</span>
-          <span>info@ufv.ca</span>
-        </div>
-        <div class="details-card">
-          <span class="details-card-title">Phone:</span>
-          <span>General Inquiries: +1 (604) 504-7441</span>
-        </div>
-      </div>
-
-      <div class="details-container">
-        <div class="details-card">
-          <span class="details-card-title">Mailing Address:</span>
-          <span>University of the Fraser Valley,</span>
-          <span>33844 King Road,</span>
-          <span>Abbotsford, BC V2S 7M8,</span>
-          <span>Canada</span>
-        </div>
-        <div class="details-card">
-          <span class="details-card-title">Social Media:</span>
-          <div class="contact-social-links">
-            <a
-              href="https://www.instagram.com/goufv/"
-              class="social-link"
-              target="_blank"
-              ><i class="fa fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/school/university-of-the-fraser-valley_2/"
-              class="social-link"
-              target="_blank"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-            <a
-              href="https://twitter.com/goUFV"
-              class="social-link"
-              target="_blank"
-              ><i class="fa fa-twitter"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/goUFV"
-              class="social-link"
-              target="_blank"
-              ><i class="fa fa-facebook"></i
-            ></a>
+    <!-- Submit an event form -->
+    <div class="form-container">
+      <form
+        action="https://www.randyconnolly.com/tests/process.php"
+        method="post"
+      >
+        <p class="form-title">
+          Enter the following details to submit an event:
+        </p>
+        <label for="event_name" class="form-labels"
+          >Event Name:<span>*</span></label
+        >
+        <input
+          type="text"
+          name="event_name"
+          class="form-input"
+          placeholder="Enter name of the event"
+          required
+        />
+        <div class="date-time">
+          <div>
+            <label for="event_date" class="form-labels"
+              >Event Date:<span>*</span></label
+            ><br />
+            <input type="date" name="event_date" class="form-input" required />
+          </div>
+          <div>
+            <label for="event_time" class="form-labels"
+              >Event Time:<span>*</span></label
+            ><br />
+            <input type="time" name="event_time" class="form-input" required />
           </div>
         </div>
-      </div>
-    </section>
+        <label for="event_address" class="form-labels"
+          >Event Address:<span>*</span></label
+        >
+        <textarea
+          name="event_address"
+          cols="30"
+          rows="5"
+          class="form-input"
+          placeholder="Enter the address of the event"
+          required
+        ></textarea>
+        <label for="event_short_desc" class="form-labels"
+          >Event Short Description:</label
+        >
+        <input
+          type="text"
+          name="event_short_desc"
+          class="form-input"
+          placeholder="Enter a short description of the event"
+        />
+        <label for="event_long_desc" class="form-labels"
+          >Event Long Description:<span>*</span></label
+        >
+        <textarea
+          name="event_long_desc"
+          cols="30"
+          rows="5"
+          class="form-input"
+          placeholder="Enter a long description of the event"
+          required
+        ></textarea>
+        <div class="buttons-container">
+          <button type="submit" class="form-buttons">Submit</button>
+          <button type="reset" class="form-buttons">Reset</button>
+        </div>
+      </form>
+    </div>
 
     <!-- Footer -->
     <div class="footer-basic">
@@ -151,10 +154,10 @@
         <ul class="list-inline">
           <li class="list-inline-item"><a href="./../index.html">Home</a></li>
           <li class="list-inline-item"><a href="./../events_page/events.html">Events</a></li>
-          <li class="list-inline-item"><a href="./../submit_page/submit.html">Submit</a></li>
+          <li class="list-inline-item"><a href="#">Submit</a></li>
           <li class="list-inline-item"><a href="./../about-us-page/about-us.html">About</a></li>
-          <li class="list-inline-item"><a href="#">Contact Us</a></li>
-          <li class="list-inline-item"><a href="./../terms-conditions-page/terms-conditions.html">Terms and Conditions</a></li>
+          <li class="list-inline-item"><a href="./../contact-us-page/contact-us.html">Contact Us</a></li>
+          <li class="list-inline-item"><a href="./../terms-conditions-page/terms-conditions.html">Privacy Policy</a></li>
         </ul>
         <p class="copyright">Copyright © 2023</p>
       </footer>

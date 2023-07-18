@@ -1,3 +1,12 @@
+/* 
+font-family: 'Original Surfer', cursive;
+font-family: 'Poppins', sans-serif;
+
+#736DF6
+#AC88EF
+
+*/
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -116,82 +125,20 @@ body {
   }
 }
 
-/* Background image and tagline section */
-.bg-image-div {
-  width: 100%;
-  height: 100vh;
-  background-image: url('./../images/contact-us-bg.avif');
-  background-size: 100% 100%;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  font-size: 3rem;
-  font-weight: 900;
-  text-align: center;
+/* Terms and Conditions section */
+.terms-container{
+    padding: 0 100px;
 }
 
-.bg-image-div > p {
-  width: 60%;
-  margin-top: 100px;
-  color: white;
-}
-
-@media (max-width: 850px) {
-  .bg-image-div {
-    height: 60vh;
-  }
-  .bg-image-div > p {
+.title{
     text-align: center;
-    width: 90%;
-    margin-top: 10px;
     font-size: 2rem;
-  }
+    font-weight: 700;
 }
 
-/* Contact Us section */
-.title {
-  font-size: 2rem;
-  text-align: center;
-  font-weight: 700;
-}
-
-.contact-container {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.details-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 0;
-}
-
-.details-card {
-  display: flex;
-  justify-content: baseline;
-  flex-direction: column;
-}
-
-.details-card-title {
-  background-color: #736df6;
-  color: white;
-  font-weight: 700;
-  font-size: 1.3rem;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.contact-social-links {
-  display: flex;
-}
-
-.social-link {
-  font-size: 2.5rem;
-  margin-right: 30px;
-  color: black;
-}
 
 /* Footer section */
+
 .footer-basic {
   padding: 40px 0;
   background-color: #ac88ef;
